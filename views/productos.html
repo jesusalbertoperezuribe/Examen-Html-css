@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos Sostenibles | EcoMarket</title>
+  <meta name="description" content="Explora el catálogo de 20 productos ecológicos, biodegradables y libres de plástico de EcoMarket para un estilo de vida sustentable.">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+  <header class="header">
+    <div class="contenedor header__contenedor">
+      <a href="../index.html" class="header__logo">🌱 EcoMarket</a>
+      <nav class="header__nav" aria-label="Navegación principal">
+        <ul class="header__lista">
+          <li class="header__item"><a href="../index.html" class="header__enlace">Inicio</a></li>
+          <li class="header__item"><a href="productos.html" class="header__enlace header__enlace--activo">Productos</a></li>
+          <li class="header__item"><a href="sobre-nosotros.html" class="header__enlace">Nosotros</a></li>
+          <li class="header__item"><a href="contacto.html" class="header__enlace">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header__acciones">
+        <a href="#buscador-catalogo" class="header__icono" aria-label="Ir al buscador">🔍 Búsqueda</a>
+        <a href="productos.html" class="header__icono" aria-label="Ver carrito de compras">🛒 Carrito (2)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="catalogo contenedor">
+    <div class="catalogo__barra-superior">
+      <div class="catalogo__encabezado">
+        <h1 class="catalogo__titulo">Catálogo de Productos Ecológicos</h1>
+        <p class="catalogo__subtitulo">Alternativas sustentables para el hogar, el cuidado personal y cero residuos.</p>
+      </div>
+      <form class="buscador" role="search">
+        <input type="search" id="buscador-catalogo" class="buscador__input" placeholder="Buscar producto ecológico...">
+      </form>
+    </div>
+
+    <div class="catalogo__layout">
+      <div class="catalogo__contenido">
+        <section class="catalogo__grid" aria-label="Listado de 20 productos ecológicos">
+          <!-- 1. cepillo-bambu.jpg -->
+          <article class="tarjeta tarjeta--descuento">
+            <span class="tarjeta__etiqueta tarjeta__etiqueta--oferta">¡Oferta!</span>
+            <input type="checkbox" id="fav-1" class="tarjeta__fav-check" hidden>
+            <label for="fav-1" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/cepillo-bambu.jpg" alt="Cepillo dental de bambú ecológico con cerdas suaves" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Cepillo de Dientes de Bambú</h3>
+              <p class="tarjeta__descripcion">Mango <strong>100% compostable</strong> con cerdas <em>suaves</em> libres de <abbr title="Bisfenol A">BPA</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$10.000</span>
+                <s class="tarjeta__precio-anterior">$14.000</s>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 2. champu-solido.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-2" class="tarjeta__fav-check" hidden>
+            <label for="fav-2" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/champu-solido.jpg" alt="Champú sólido artesanal con aceites esenciales naturales" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Champú Sólido Natural</h3>
+              <p class="tarjeta__descripcion">Fórmula <strong>concentrada</strong> botánica con certificación <abbr title="Biodegradable">BIO</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$28.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 3. jabon-organico.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-3" class="tarjeta__fav-check" hidden>
+            <label for="fav-3" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/jabon-organico.jpg" alt="Jabón artesanal orgánico saponificado en frío" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Jabón Artesanal Orgánico</h3>
+              <p class="tarjeta__descripcion">Elaborado con <strong>aceites puros</strong> e hidratación <em>suave</em> <abbr title="Ecológico">ECO</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$14.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 4. esponja-luffa.jpg -->
+          <article class="tarjeta tarjeta--descuento">
+            <span class="tarjeta__etiqueta tarjeta__etiqueta--oferta">¡Oferta!</span>
+            <input type="checkbox" id="fav-4" class="tarjeta__fav-check" hidden>
+            <label for="fav-4" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/esponja-luffa.jpg" alt="Esponja vegetal de luffa para baño y ducha" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Esponja Natural de Luffa</h3>
+              <p class="tarjeta__descripcion">Exfoliante <strong>100% vegetal</strong> y totalmente <abbr title="Biodegradable">BIO</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$8.500</span>
+                <s class="tarjeta__precio-anterior">$11.500</s>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 5. discos-desmaquillantes.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-5" class="tarjeta__fav-check" hidden>
+            <label for="fav-5" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/discos-desmaquillantes.jpg" alt="Discos desmaquillantes lavables de algodón orgánico" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Discos Desmaquillantes</h3>
+              <p class="tarjeta__descripcion">Discos <strong>lavables</strong> de algodón <em>suave</em> con norma <abbr title="Global Organic Textile Standard">GOTS</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$26.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 6. peine-madera.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-6" class="tarjeta__fav-check" hidden>
+            <label for="fav-6" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/peine-madera.jpg" alt="Peine antiestático de madera pulida natural" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Peine de Madera de Bambú</h3>
+              <p class="tarjeta__descripcion">Efecto <strong>antiestático</strong> de madera <em>sostenible</em> <abbr title="Forest Stewardship Council">FSC</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$17.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 7. hisopos-bambu.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-7" class="tarjeta__fav-check" hidden>
+            <label for="fav-7" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/hisopos-bambu.jpg" alt="Hisopos biodegradables de bambú y algodón" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Hisopos de Bambú (100 uds)</h3>
+              <p class="tarjeta__descripcion">Bastoncillos de <strong>algodón puro</strong> <em>compostables</em> <abbr title="Biodegradable">BIO</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$11.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 8. desodorante-natural.jpg (AGOTADO 1) -->
+          <article class="tarjeta tarjeta--agotado">
+            <span class="tarjeta__etiqueta tarjeta__etiqueta--agotado">Agotado</span>
+            <input type="checkbox" id="fav-8" class="tarjeta__fav-check" hidden>
+            <label for="fav-8" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/desodorante-natural.jpg" alt="Desodorante natural en empaque de cartón reciclable" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Desodorante Natural en Cartón</h3>
+              <p class="tarjeta__descripcion">Protección <strong>sin aluminio</strong> en envase <em>compostable</em> <abbr title="Ecológico">ECO</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$22.000</span>
+              </div>
+              <button type="button" class="btn" disabled>Agotado</button>
+            </div>
+          </article>
+
+          <!-- 9. hilo-dental.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-9" class="tarjeta__fav-check" hidden>
+            <label for="fav-9" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/hilo-dental.jpg" alt="Hilo dental vegetal en frasco de vidrio recargable" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Hilo Dental Ecológico</h3>
+              <p class="tarjeta__descripcion">Fibra vegetal de <strong>maíz</strong> con cera <em>natural</em> <abbr title="Zero Waste / Basura Cero">ZW</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$15.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 10. copa-menstrual.jpg -->
+          <article class="tarjeta tarjeta--descuento">
+            <span class="tarjeta__etiqueta tarjeta__etiqueta--oferta">¡Oferta!</span>
+            <input type="checkbox" id="fav-10" class="tarjeta__fav-check" hidden>
+            <label for="fav-10" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/copa-menstrual.jpg" alt="Copa menstrual reutilizable de grado médico" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Copa Menstrual Ecológica</h3>
+              <p class="tarjeta__descripcion">Silicona <strong>médica</strong> <em>reutilizable</em> sin <abbr title="Bisfenol A">BPA</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$46.000</span>
+                <s class="tarjeta__precio-anterior">$55.000</s>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 11. envoltura-cera.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-11" class="tarjeta__fav-check" hidden>
+            <label for="fav-11" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/envoltura-cera.jpg" alt="Envolturas de tela encerada reutilizables para alimentos" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Envolturas de Cera Natural</h3>
+              <p class="tarjeta__descripcion">Reemplazo <strong>lavable</strong> al papel film plástico <abbr title="Biodegradable">BIO</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$32.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 12. bolsas-malla.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-12" class="tarjeta__fav-check" hidden>
+            <label for="fav-12" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/bolsas-malla.jpg" alt="Bolsas de malla de algodón reutilizables para mercado" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Bolsas de Malla de Algodón</h3>
+              <p class="tarjeta__descripcion">Algodón <strong>orgánico</strong> <em>transpirable</em> <abbr title="Global Organic Textile Standard">GOTS</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$18.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 13. bolsas-silicona.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-13" class="tarjeta__fav-check" hidden>
+            <label for="fav-13" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/bolsas-silicona.jpg" alt="Bolsas de silicona herméticas reutilizables" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Bolsas de Silicona Herméticas</h3>
+              <p class="tarjeta__descripcion">Aptas para <strong>congelar</strong> y alimentos sin <abbr title="Bisfenol A">BPA</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$29.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 14. cepillo-platos.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-14" class="tarjeta__fav-check" hidden>
+            <label for="fav-14" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/cepillo-platos.jpg" alt="Cepillo de madera y cerdas vegetales para fregar platos" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Cepillo de Madera para Platos</h3>
+              <p class="tarjeta__descripcion">Cerdas de <strong>fibra vegetal</strong> con madera <abbr title="Forest Stewardship Council">FSC</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$19.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 15. esponja-coco.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-15" class="tarjeta__fav-check" hidden>
+            <label for="fav-15" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/esponja-coco.jpg" alt="Esponja de fibra de coco ecológica para cocina" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Esponja de Fibra de Coco</h3>
+              <p class="tarjeta__descripcion">Limpieza <strong>sin microplásticos</strong> 100% <abbr title="Biodegradable">BIO</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$10.500</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 16. pitillos-acero.jpg (AGOTADO 2) -->
+          <article class="tarjeta tarjeta--agotado">
+            <span class="tarjeta__etiqueta tarjeta__etiqueta--agotado">Agotado</span>
+            <input type="checkbox" id="fav-16" class="tarjeta__fav-check" hidden>
+            <label for="fav-16" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/pitillos-acero.jpg" alt="Pack de pitillos de acero inoxidable reutilizables" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Pitillos de Acero Inoxidable</h3>
+              <p class="tarjeta__descripcion">Acero <strong>inoxidable</strong> duradero para un estilo <abbr title="Zero Waste / Basura Cero">ZW</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$16.000</span>
+              </div>
+              <button type="button" class="btn" disabled>Agotado</button>
+            </div>
+          </article>
+
+          <!-- 17. cubiertos-bambu.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-17" class="tarjeta__fav-check" hidden>
+            <label for="fav-17" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/cubiertos-bambu.jpg" alt="Set portátil de cubiertos de bambú con funda de tela" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Cubiertos de Bambú para Llevar</h3>
+              <p class="tarjeta__descripcion">Estuche de <strong>tela orgánica</strong> y madera <abbr title="Forest Stewardship Council">FSC</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$25.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 18. botella-vidrio.jpg -->
+          <article class="tarjeta tarjeta--descuento">
+            <span class="tarjeta__etiqueta tarjeta__etiqueta--oferta">¡Oferta!</span>
+            <input type="checkbox" id="fav-18" class="tarjeta__fav-check" hidden>
+            <label for="fav-18" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/botella-vidrio.jpg" alt="Botella de agua de vidrio borosilicato reutilizable" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Botella de Agua de Vidrio</h3>
+              <p class="tarjeta__descripcion">Vidrio <strong>borosilicato</strong> libre de <abbr title="Bisfenol A">BPA</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$39.000</span>
+                <s class="tarjeta__precio-anterior">$45.000</s>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 19. taza-cafe.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-19" class="tarjeta__fav-check" hidden>
+            <label for="fav-19" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/taza-cafe.jpg" alt="Taza para café reutilizable de fibra de bambú" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Taza de Café de Fibra de Bambú</h3>
+              <p class="tarjeta__descripcion">Vaso <strong>reutilizable</strong> y ligero con sello <abbr title="Ecológico">ECO</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$35.000</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+
+          <!-- 20. bolsas-compostables.jpg -->
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">En Stock</span>
+            <input type="checkbox" id="fav-20" class="tarjeta__fav-check" hidden>
+            <label for="fav-20" class="tarjeta__fav-label" aria-label="Favorito">❤</label>
+            <img src="../img/products/bolsas-compostables.jpg" alt="Bolsas de basura compostables de almidón vegetal" class="tarjeta__imagen" width="320" height="220">
+            <div class="tarjeta__cuerpo">
+              <h3 class="tarjeta__nombre">Bolsas de Basura Compostables</h3>
+              <p class="tarjeta__descripcion">Material <strong>vegetal</strong> que se degrada fácil <abbr title="Biodegradable">BIO</abbr>.</p>
+              <div class="tarjeta__precios">
+                <span class="tarjeta__precio-actual">$19.500</span>
+              </div>
+              <button type="button" class="btn">Añadir al carrito</button>
+            </div>
+          </article>
+        </section>
+
+        <nav class="paginacion" aria-label="Paginación del catálogo">
+          <a href="#buscador-catalogo" class="paginacion__enlace">Anterior</a>
+          <a href="#buscador-catalogo" class="paginacion__enlace paginacion__enlace--activo" aria-current="page">1</a>
+          <a href="#buscador-catalogo" class="paginacion__enlace">2</a>
+          <a href="#buscador-catalogo" class="paginacion__enlace">3</a>
+          <a href="#buscador-catalogo" class="paginacion__enlace">Siguiente</a>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor footer__contenedor">
+      <p><strong>🌱 EcoMarket</strong> — Tienda ecológica y sostenible</p>
+      <ul class="footer__enlaces">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="sobre-nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="icono-red">📸 Instagram</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="icono-red">📘 Facebook</a>
+        <a href="https://whatsapp.com" target="_blank" rel="noopener" class="icono-red">💬 WhatsApp</a>
+      </div>
+      <p>&copy; 2026 EcoMarket. Contacto: <a href="mailto:info@ecomarket.com">info@ecomarket.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+

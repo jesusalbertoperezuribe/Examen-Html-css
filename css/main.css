@@ -1,0 +1,63 @@
+/* ==========================================================================
+   main.css - Variables, Reseteo y Tipografia Base (EcoMarket)
+   ========================================================================== */
+
+/* Variables de color y tipografia (:root) */
+:root {
+  --color-primary: #2ecc71;
+  --color-secondary: #27ae60;
+  --color-bg: #f5f5dc;
+  --color-white: #ffffff;
+  --color-text: #2c3e35;
+  --color-muted: #5f6f65;
+  --color-border: #dcdcd0;
+  --color-danger: #e74c3c;
+  --color-warning: #e67e22;
+  --font-base: sans-serif;
+}
+
+/* Reseteo basico universal */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.5rem;
+  color: #1e2d24;
+}
+
+abbr[title] {
+  text-decoration: underline dotted var(--color-secondary);
+  cursor: help;
+}

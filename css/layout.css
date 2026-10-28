@@ -1,0 +1,337 @@
+﻿/* ==========================================================================
+   layout.css - Estructura, Header, Footer, Grids y Responsive Mobile First
+   ========================================================================== */
+
+/* Contenedor centralizado */
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Encabezado y Navegacion Compartida (BEM) */
+.header {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 0;
+}
+
+.header__contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.header__lista {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header__enlace {
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+}
+
+.header__enlace:hover,
+.header__enlace--activo {
+  color: var(--color-secondary);
+  background-color: rgba(46, 204, 113, 0.12);
+  font-weight: 700;
+}
+
+.header__acciones {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.header__icono {
+  padding: 0.35rem 0.7rem;
+  background-color: var(--color-bg);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Banner Hero (Home) con imagen fondo.webp */
+.hero {
+  background-image: linear-gradient(rgba(22, 55, 36, 0.72), rgba(22, 55, 36, 0.72)), url('../img/fondo.webp');
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  text-align: center;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.hero__caja {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.hero h1 {
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.categorias {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 1.25rem 0 0.5rem;
+}
+
+section {
+  padding: 1.5rem 0;
+}
+
+.seccion-encabezado {
+  margin-bottom: 1.25rem;
+}
+
+.subtitulo-seccion {
+  margin: 1.5rem 0 1rem;
+}
+
+/* Grid de Productos Destacados en Home */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Layout del Catalogo */
+.catalogo {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.catalogo__barra-superior {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.catalogo__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* Sidebar de Filtros (BEM) */
+.filtros {
+  background-color: var(--color-white);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.filtros hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 1rem 0;
+}
+
+.filtros__grupo {
+  margin-bottom: 0.5rem;
+}
+
+.filtros__titulo {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.filtros__lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.filtros__etiqueta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.92rem;
+}
+
+.filtros__rango {
+  width: 100%;
+  accent-color: var(--color-secondary);
+}
+
+.filtros__valor {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+/* Grid del Catalogo - Base Movil 360px (1 columna) */
+.catalogo__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Secciones de Sobre Nosotros */
+.historia {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.historia__texto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.valores {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 1rem 0;
+}
+
+.valores li {
+  flex: 1 1 220px;
+  background: var(--color-white);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+
+.carrusel .tarjeta {
+  min-width: 260px;
+  flex: 1;
+}
+
+/* Seccion Contacto */
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.form-contacto,
+.ubicacion {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+}
+
+.form-contacto label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  font-family: inherit;
+}
+
+/* Pie de Pagina Compartido */
+.footer {
+  background-color: #1e2d24;
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.75rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer__contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.footer__enlaces {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+/* Media Queries Responsive: Tablet (>= 600px) */
+@media (min-width: 600px) {
+  .catalogo__barra-superior {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalogo__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media Queries Responsive: Desktop (>= 1024px) */
+@media (min-width: 1024px) {
+  .grid-productos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .catalogo__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filtros {
+    position: sticky;
+    top: 20px;
+  }
+
+  .catalogo__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .historia {
+    flex-direction: row;
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

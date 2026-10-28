@@ -1,0 +1,23 @@
+/* ==========================================================================
+   animations.css - Keyframes e interactividad visual CSS
+   ========================================================================== */
+
+/* Animacion sutil de pulso para badges de ¡Oferta! */
+@keyframes pulsoOferta {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.tarjeta__etiqueta--oferta {
+  animation: pulsoOferta 1.8s infinite ease-in-out;
+}
+
+/* Pausar animacion al pasar el cursor sobre la tarjeta */
+.tarjeta:hover .tarjeta__etiqueta--oferta {
+  animation-play-state: paused;
+}

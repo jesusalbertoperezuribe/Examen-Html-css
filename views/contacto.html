@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | EcoMarket</title>
+  <meta name="description" content="Ponte en contacto con el equipo de EcoMarket para resolver tus dudas sobre productos ecológicos.">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+  <header class="header">
+    <div class="contenedor header__contenedor">
+      <a href="../index.html" class="header__logo">🌱 EcoMarket</a>
+      <nav class="header__nav" aria-label="Navegación principal">
+        <ul class="header__lista">
+          <li class="header__item"><a href="../index.html" class="header__enlace">Inicio</a></li>
+          <li class="header__item"><a href="productos.html" class="header__enlace">Productos</a></li>
+          <li class="header__item"><a href="sobre-nosotros.html" class="header__enlace">Nosotros</a></li>
+          <li class="header__item"><a href="contacto.html" class="header__enlace header__enlace--activo">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header__acciones">
+        <a href="productos.html" class="header__icono">🔍 Búsqueda</a>
+        <a href="productos.html" class="header__icono">🛒 Carrito (2)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="contacto-seccion">
+      <div class="seccion-encabezado">
+        <h1>Contáctanos</h1>
+        <p>Completa el formulario y te responderemos pronto. Los campos se validan con bordes de color automáticamente.</p>
+      </div>
+
+      <div class="contacto-grid">
+        <form class="form-contacto" action="#" method="GET">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu consulta o comentario..." required></textarea>
+
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+
+        <div class="ubicacion">
+          <h2>📍 Nuestra Ubicación</h2>
+          <p>Visítanos en nuestra tienda principal o escríbenos por redes sociales.</p>
+          <img src="../img/mapa.jpg" alt="Mapa de ubicación de la sede EcoMarket" class="img-mapa">
+          <p><strong>Dirección:</strong> Calle Ecológica #12-34, Ciudad Verde</p>
+          <p><strong>Horario:</strong> Lunes a Sábado de 9:00 a.m. a 6:00 p.m.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor footer__contenedor">
+      <p><strong>🌱 EcoMarket</strong> — Tienda ecológica y sostenible</p>
+      <ul class="footer__enlaces">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="sobre-nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="sobre-nosotros.html">Términos Legales</a></li>
+      </ul>
+      <div class="redes-sociales">
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="icono-red" aria-label="Instagram">📸 Instagram</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" class="icono-red" aria-label="Facebook">📘 Facebook</a>
+        <a href="https://whatsapp.com" target="_blank" rel="noopener" class="icono-red" aria-label="WhatsApp">💬 WhatsApp</a>
+      </div>
+      <p>&copy; 2026 EcoMarket. Contacto: info@ecomarket.com</p>
+    </div>
+  </footer>
+</body>
+</html>

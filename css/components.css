@@ -1,0 +1,271 @@
+/* ==========================================================================
+   components.css - Tarjetas, Botones, Badges, Inputs y Estados
+   ========================================================================== */
+
+/* Boton Base (BEM: .btn) */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.2rem;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover:not([disabled]) {
+  background-color: var(--color-secondary);
+}
+
+.btn--secundario {
+  background-color: var(--color-white);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.btn--secundario:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+/* Boton Deshabilitado con Selector de Atributo */
+.btn[disabled],
+button[disabled] {
+  background-color: #95a5a6;
+  color: #ecf0f1;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Buscador con :focus-visible */
+.buscador {
+  width: 100%;
+  max-width: 360px;
+}
+
+input[type="search"],
+.buscador__input {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  margin-bottom: 0;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  background-color: var(--color-white);
+  font-size: 0.95rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+input[type="search"]:focus-visible,
+.buscador__input:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: none;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.25);
+}
+
+/* Tarjeta de Producto (BEM: .tarjeta) */
+.tarjeta {
+  position: relative;
+  background-color: var(--color-white);
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta > .tarjeta__imagen,
+.tarjeta > img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f4f7f4;
+}
+
+.tarjeta > .tarjeta__cuerpo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.45rem;
+}
+
+/* Efecto hover suave con :not() excluyendo productos agotados */
+.tarjeta:not(.tarjeta--agotado):hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.09);
+}
+
+/* Tarjeta Agotada */
+.tarjeta--agotado {
+  opacity: 0.6;
+}
+
+.tarjeta__nombre {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.tarjeta__descripcion {
+  font-size: 0.86rem;
+  color: var(--color-muted);
+}
+
+.tarjeta__precios {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+
+.tarjeta__precio-actual,
+.precio {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-secondary);
+  margin-top: auto;
+}
+
+.tarjeta--descuento .tarjeta__precio-actual {
+  color: #d35400;
+}
+
+.tarjeta__precio-anterior {
+  font-size: 0.85rem;
+  color: #888888;
+}
+
+/* Badges Superpuestos */
+.tarjeta__etiqueta,
+.etiqueta-eco {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 4px 9px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.tarjeta__etiqueta--oferta {
+  background-color: var(--color-warning);
+}
+
+.tarjeta__etiqueta--agotado {
+  background-color: #7f8c8d;
+}
+
+/* Boton Favoritos 100% CSS con Hermano Adyacente (+) y :checked */
+.tarjeta__fav-check,
+.fav-checkbox {
+  display: none;
+}
+
+.tarjeta__fav-label,
+.fav-label {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #cccccc;
+  font-size: 1.25rem;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+  transition: color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.tarjeta__fav-label:hover,
+.fav-label:hover {
+  transform: scale(1.1);
+}
+
+.tarjeta__fav-check:checked + .tarjeta__fav-label,
+.fav-checkbox:checked + .fav-label {
+  color: var(--color-danger);
+}
+
+/* Paginacion Visual */
+.paginacion {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginacion__enlace {
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.paginacion__enlace:hover,
+.paginacion__enlace--activo {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border-color: var(--color-secondary);
+}
+
+/* Validacion Visual de Formularios sin JavaScript */
+input:required:invalid,
+textarea:required:invalid {
+  border: 2px solid var(--color-danger);
+}
+
+input:required:valid,
+textarea:required:valid {
+  border: 2px solid var(--color-primary);
+}
+
+.img-historia,
+.img-mapa {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+.tarjeta img.avatar-cliente,
+.carrusel .tarjeta img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: var(--color-bg);
+  padding: 6px;
+}
+
+.icono-red {
+  display: inline-block;
+  margin: 5px 10px;
+  color: var(--color-white);
+  transition: transform 0.3s ease;
+}
+
+.icono-red:hover {
+  transform: scale(1.1);
+}
