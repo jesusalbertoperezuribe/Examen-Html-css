@@ -61,3 +61,47 @@ abbr[title] {
   text-decoration: underline dotted var(--color-secondary);
   cursor: help;
 }
+
+.parcial{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 100px;
+background-color: #2ecc71;
+box-shadow: #2c5c3f;
+}
+
+.numerosparcial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.bloque1parcial{
+  gap: 50px;
+}
+
+.minutopar{
+  color: red;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.flash{
+  background-color: #e74c3c;
+  border-radius: 8px;
+}
+
+.borden{
+  background-color: white;
+  border-radius: 8px;
+  text-align: center
+}
+
+.shop{
+    background-color: white;
+  border-radius: 8cap;
+  text-align: center
+}
